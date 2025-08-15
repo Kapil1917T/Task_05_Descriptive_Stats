@@ -57,11 +57,22 @@ Python scripts (to be added) are used to:
 
 ---
 
-## ✅ Next Steps
-- Expand LLM prompt set with more advanced reasoning questions
-- Compare LLM performance across GPT and Claude
-- Add more seasons (e.g., 2024, 2023) for longitudinal analysis
-- Visualize trends using matplotlib or seaborn (optional)
+## 🔄 Update 2 Summary
+
+Following the initial three prompts from Update 1, the project was expanded with seven additional prompts (Prompts 4–10) to deepen the analysis.
+
+### New Prompts:
+4. **Top 3 Goal Scorers** – Lists the top three players by total goals.  
+5. **Top 3 in Assists** – Lists the top three players by total assists.  
+6. **Best Goal-to-Shot Efficiency** – Goals per shot, for players with ≥10 shots.  
+7. **All-round Contribution Score** – (goals + assists − turnovers).  
+8. **First vs Second Half Scoring** – Compares team performance by halves.  
+9. **Overtime Shot-Stopping** – OT saves comparison between Syracuse and Opponents.  
+10. **Season Attendance Quick Facts** – Total games, attendance, and average per game.
+
+### New Validation Scripts:
+- `Scripts/validate_update2_player_metrics.py` – Validates Prompts 4, 6, 7.
+- `Scripts/validate_update2_team_periods_attendance.py` – Validates Prompts 8, 9, 10.
 
 ---
 
@@ -69,3 +80,4 @@ Python scripts (to be added) are used to:
 - GitHub repo name: `Task_05_Descriptive_Stats`
 - Raw datasets are not uploaded
 - Prompt logs and validation scripts are included
+
